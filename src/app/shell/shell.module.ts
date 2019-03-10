@@ -6,9 +6,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ShellComponent } from './shell.component';
 import { HeaderComponent } from './header/header.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 @NgModule({
-  imports: [CommonModule, TranslateModule, NgbModule, RouterModule],
-  declarations: [HeaderComponent, ShellComponent]
+    imports: [CommonModule, TranslateModule, NgbModule, RouterModule],
+    declarations: [HeaderComponent, ShellComponent, SideNavComponent]
 })
 export class ShellModule {}

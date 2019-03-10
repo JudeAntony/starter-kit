@@ -1,2 +1,14 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<section class="shell-container">
+    <app-header></app-header>
+    <section
+        class="section main-container"
+        data-section-type="Content container"
+    >
+        <main class="main-content">
+            <router-outlet></router-outlet>
+        </main>
+        <aside class="side-nav">
+            <app-side-nav></app-side-nav>
+        </aside>
+    </section>
+</section>
