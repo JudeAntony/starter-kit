@@ -1,0 +1,24 @@
+.breadcrumb-wrapper {
+    background-color: #f9fafa;
+    margin-bottom: 0;
+    padding: 12px 15px;
+}
+
+.breadcrumb-items {
+    margin: 0;
+    padding: 0;
+    ul {
+        list-style-type: none;
+    }
+}
+
+.breadcrumb-item {
+    display: inline-block;
+    transition: all 0.2s ease;
+    font-size: 12px;
+    color: #6d727c;
+}
+
+.breadcrumb-item-link {
+    color: #007aff;
+}

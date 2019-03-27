@@ -1,3 +1,18 @@
 <div class="container-fluid">
     <app-dashboard-header></app-dashboard-header>
+    <ngx-datatable
+        class="bootstrap"
+        [rows]="rows"
+        [loadingIndicator]="true"
+        [columns]="columns"
+        [columnMode]="'force'"
+        [headerHeight]="40"
+        [summaryRow]="true"
+        [summaryPosition]="'bottom'"
+        [footerHeight]="40"
+        [limit]="10"
+        [rowHeight]="'auto'"
+        [reorderable]="false"
+    >
+    </ngx-datatable>
 </div>

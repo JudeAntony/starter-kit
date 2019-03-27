@@ -1,0 +1,287 @@
+{
+    "command": "SELECT",
+    "rowCount": 10,
+    "oid": null,
+    "rows": [
+        {
+            "run_id": "EXE201903251946453885",
+            "run_description": "test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 2,
+                "seconds": 18,
+                "milliseconds": 600
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-25T14:16:45.400Z",
+            "end_date_time": "2019-03-25T14:19:04.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903251940483884",
+            "run_description": "ates",
+            "status_value": "95",
+            "execution_status": "Cancelled",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "seconds": 1,
+                "milliseconds": 711
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-25T14:10:48.289Z",
+            "end_date_time": "2019-03-25T14:10:50.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903251858143883",
+            "run_description": "wef",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 1,
+                "seconds": 56,
+                "milliseconds": 536
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-25T13:28:14.464Z",
+            "end_date_time": "2019-03-25T13:30:11.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903251853323882",
+            "run_description": "test",
+            "status_value": "95",
+            "execution_status": "Cancelled",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "seconds": 4,
+                "milliseconds": 820
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-25T13:23:32.180Z",
+            "end_date_time": "2019-03-25T13:23:37.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903251849073881",
+            "run_description": "Test ASN",
+            "status_value": "95",
+            "execution_status": "Cancelled",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "seconds": 9,
+                "milliseconds": 728
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-25T13:19:07.272Z",
+            "end_date_time": "2019-03-25T13:19:17.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903251812503880",
+            "run_description": "hljjkl",
+            "status_value": "95",
+            "execution_status": "Cancelled",
+            "suite_case_name": "Create iLPN",
+            "duration_mins": {
+                "seconds": 5,
+                "milliseconds": 761
+            },
+            "exec_reference": 1277,
+            "exec_level": "C",
+            "start_date_time": "2019-03-25T12:42:50.239Z",
+            "end_date_time": "2019-03-25T12:42:56.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903251810393879",
+            "run_description": "Create iLPN",
+            "status_value": "95",
+            "execution_status": "Cancelled",
+            "suite_case_name": "Create iLPN",
+            "duration_mins": {
+                "seconds": 7,
+                "milliseconds": 182
+            },
+            "exec_reference": 1277,
+            "exec_level": "C",
+            "start_date_time": "2019-03-25T12:40:39.818Z",
+            "end_date_time": "2019-03-25T12:40:47.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903222024203878",
+            "run_description": "Fixed station returns receiving",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Fixed station returns receiving",
+            "duration_mins": {
+                "minutes": 3,
+                "seconds": 37,
+                "milliseconds": 822
+            },
+            "exec_reference": 1275,
+            "exec_level": "C",
+            "start_date_time": "2019-03-22T14:54:20.178Z",
+            "end_date_time": "2019-03-22T14:57:58.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903201529403877",
+            "run_description": "Returns Receiving-Complimentary Shipping",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Returns Receiving-Complimentary Shipping",
+            "duration_mins": {
+                "minutes": 3,
+                "seconds": 24,
+                "milliseconds": 97
+            },
+            "exec_reference": 1281,
+            "exec_level": "C",
+            "start_date_time": "2019-03-20T09:59:40.903Z",
+            "end_date_time": "2019-03-20T10:03:05.000Z",
+            "update_user": "Sujith Anto"
+        },
+        {
+            "run_id": "EXE201903201520303876",
+            "run_description": "Returns Receiving- Charged for Shipping",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Returns Receiving- Charged for Shipping",
+            "duration_mins": {
+                "minutes": 3,
+                "seconds": 10,
+                "milliseconds": 884
+            },
+            "exec_reference": 1283,
+            "exec_level": "C",
+            "start_date_time": "2019-03-20T09:50:30.116Z",
+            "end_date_time": "2019-03-20T09:53:41.000Z",
+            "update_user": "Sujith Anto"
+        }
+    ],
+    "fields": [
+        {
+            "name": "run_id",
+            "tableID": 431748,
+            "columnID": 1,
+            "dataTypeID": 1043,
+            "dataTypeSize": -1,
+            "dataTypeModifier": 25,
+            "format": "text"
+        },
+        {
+            "name": "run_description",
+            "tableID": 431748,
+            "columnID": 2,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "status_value",
+            "tableID": 431748,
+            "columnID": 7,
+            "dataTypeID": 1043,
+            "dataTypeSize": -1,
+            "dataTypeModifier": 24,
+            "format": "text"
+        },
+        {
+            "name": "execution_status",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "suite_case_name",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 1043,
+            "dataTypeSize": -1,
+            "dataTypeModifier": 54,
+            "format": "text"
+        },
+        {
+            "name": "duration_mins",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 1186,
+            "dataTypeSize": 16,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "exec_reference",
+            "tableID": 431748,
+            "columnID": 4,
+            "dataTypeID": 23,
+            "dataTypeSize": 4,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "exec_level",
+            "tableID": 431748,
+            "columnID": 6,
+            "dataTypeID": 1043,
+            "dataTypeSize": -1,
+            "dataTypeModifier": 14,
+            "format": "text"
+        },
+        {
+            "name": "start_date_time",
+            "tableID": 431748,
+            "columnID": 8,
+            "dataTypeID": 1184,
+            "dataTypeSize": 8,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "end_date_time",
+            "tableID": 431748,
+            "columnID": 16,
+            "dataTypeID": 1184,
+            "dataTypeSize": 8,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "update_user",
+            "tableID": 431650,
+            "columnID": 4,
+            "dataTypeID": 1043,
+            "dataTypeSize": -1,
+            "dataTypeModifier": 104,
+            "format": "text"
+        }
+    ],
+    "_parsers": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "rowAsArray": false
+}
