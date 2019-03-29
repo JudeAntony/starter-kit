@@ -7,13 +7,17 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { AboutRoutingModule } from './about-routing.module';
 import { AboutComponent } from './about.component';
 import { DashboardHeaderComponent } from './dashboard-header/dashboard-header.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     imports: [
         CommonModule,
+        FormsModule,
         TranslateModule,
         AboutRoutingModule,
-        NgxDatatableModule
+        NgxDatatableModule,
+        NgSelectModule
     ],
     declarations: [AboutComponent, DashboardHeaderComponent]
 })

@@ -1,18 +1,94 @@
 <div class="container-fluid">
     <app-dashboard-header></app-dashboard-header>
+    <div class="table-controls">
+        <div class="rows-per-page">
+            <ng-select
+                [items]="entries"
+                [(ngModel)]="rowsPerPage"
+                [clearable]="false"
+                [searchable]="false"
+                required
+            >
+            </ng-select>
+        </div>
+        <div class="search">
+            <div class="has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" placeholder="Search" class="search-feild" />
+            </div>
+        </div>
+        <div class="pagination"></div>
+    </div>
     <ngx-datatable
-        class="bootstrap"
+        class="bootstrap execution-results"
         [rows]="rows"
         [loadingIndicator]="true"
-        [columns]="columns"
         [columnMode]="'force'"
         [headerHeight]="40"
-        [summaryRow]="true"
-        [summaryPosition]="'bottom'"
         [footerHeight]="40"
-        [limit]="10"
-        [rowHeight]="'auto'"
+        [limit]="rowsPerPage"
+        [rowHeight]="50"
         [reorderable]="false"
     >
+        <ngx-datatable-column prop="run_id" name="Run Id">
+            <ng-template ngx-datatable-cell-template let-row="row">
+                <a
+                    [routerLink]="['/details']"
+                    routerLinkActive="router-link-active"
+                >
+                    {{ row.run_id }}
+                </a>
+            </ng-template>
+        </ngx-datatable-column>
+        <ngx-datatable-column
+            prop="execution_status"
+            name="Status"
+        ></ngx-datatable-column>
+        <ngx-datatable-column
+            prop="suite_case_name"
+            name="Suite / Case"
+        ></ngx-datatable-column>
+        <ngx-datatable-column
+            prop="update_user"
+            name="User"
+        ></ngx-datatable-column>
+        <ngx-datatable-column
+            [sortable]="false"
+            [canAutoResize]="false"
+            [draggable]="false"
+            [resizeable]="false"
+        >
+            <ng-template ngx-datatable-header-template>
+                <span>Action</span>
+            </ng-template>
+            <ng-template ngx-datatable-cell-template>
+                <div class="table-actions">
+                    <span class="action-item">
+                        <a
+                            href="javascript: void(0)"
+                            class="btn btn-outline-primary btn-sm"
+                        >
+                            <i class="far fa-file-excel"></i>
+                        </a>
+                    </span>
+                    <span class="action-item">
+                        <a
+                            href="javascript: void(0)"
+                            class="btn btn-outline-primary btn-sm"
+                        >
+                            <i class="far fa-chart-bar"></i>
+                        </a>
+                    </span>
+                    <span class="action-item">
+                        <a
+                            href="javascript: void(0)"
+                            class="btn btn-outline-danger btn-sm"
+                        >
+                            <i class="fas fa-ban"></i>
+                        </a>
+                    </span>
+                </div>
+            </ng-template>
+        </ngx-datatable-column>
     </ngx-datatable>
 </div>

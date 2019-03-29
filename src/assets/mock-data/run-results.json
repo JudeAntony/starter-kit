@@ -1,172 +1,347 @@
 {
     "command": "SELECT",
-    "rowCount": 10,
+    "rowCount": 20,
     "oid": null,
     "rows": [
         {
-            "run_id": "EXE201903251946453885",
+            "run_id": "EXE201903271609553895",
             "run_description": "test",
             "status_value": "90",
             "execution_status": "Completed",
-            "suite_case_name": "Test ASN ",
+            "suite_case_name": "Test",
+            "duration_mins": {
+                "minutes": 3,
+                "seconds": 52,
+                "milliseconds": 751
+            },
+            "exec_reference": 101,
+            "exec_level": "S",
+            "start_date_time": "2019-03-27T10:39:55.249Z",
+            "end_date_time": "2019-03-27T10:43:48.000Z",
+            "update_user": "Sujith Anto"
+        },
+        {
+            "run_id": "EXE201903271606233894",
+            "run_description": "Test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test",
             "duration_mins": {
                 "minutes": 2,
-                "seconds": 18,
-                "milliseconds": 600
+                "seconds": 33,
+                "milliseconds": 56
             },
-            "exec_reference": 1299,
-            "exec_level": "C",
-            "start_date_time": "2019-03-25T14:16:45.400Z",
-            "end_date_time": "2019-03-25T14:19:04.000Z",
-            "update_user": "Vibin Arumugam"
+            "exec_reference": 101,
+            "exec_level": "S",
+            "start_date_time": "2019-03-27T10:36:23.944Z",
+            "end_date_time": "2019-03-27T10:38:57.000Z",
+            "update_user": "Sujith Anto"
         },
         {
-            "run_id": "EXE201903251940483884",
-            "run_description": "ates",
-            "status_value": "95",
-            "execution_status": "Cancelled",
-            "suite_case_name": "Test ASN ",
+            "run_id": "EXE201903271524033893",
+            "run_description": "Reprint iLPN Label",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Reprint iLPN Label",
             "duration_mins": {
-                "seconds": 1,
-                "milliseconds": 711
+                "minutes": 3,
+                "seconds": 30,
+                "milliseconds": 507
             },
-            "exec_reference": 1299,
+            "exec_reference": 1285,
             "exec_level": "C",
-            "start_date_time": "2019-03-25T14:10:48.289Z",
-            "end_date_time": "2019-03-25T14:10:50.000Z",
+            "start_date_time": "2019-03-27T09:54:03.493Z",
+            "end_date_time": "2019-03-27T09:57:34.000Z",
             "update_user": "Vibin Arumugam"
         },
         {
-            "run_id": "EXE201903251858143883",
-            "run_description": "wef",
+            "run_id": "EXE201903271037213892",
+            "run_description": "tset",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test",
+            "duration_mins": {
+                "minutes": 1,
+                "seconds": 26,
+                "milliseconds": 563
+            },
+            "exec_reference": 101,
+            "exec_level": "S",
+            "start_date_time": "2019-03-27T05:07:21.437Z",
+            "end_date_time": "2019-03-27T05:08:48.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903261224223891",
+            "run_description": "Tt",
             "status_value": "90",
             "execution_status": "Completed",
             "suite_case_name": "Test ASN ",
             "duration_mins": {
                 "minutes": 1,
-                "seconds": 56,
-                "milliseconds": 536
+                "seconds": 48,
+                "milliseconds": 361
             },
             "exec_reference": 1299,
             "exec_level": "C",
-            "start_date_time": "2019-03-25T13:28:14.464Z",
-            "end_date_time": "2019-03-25T13:30:11.000Z",
+            "start_date_time": "2019-03-26T06:54:22.639Z",
+            "end_date_time": "2019-03-26T06:56:11.000Z",
             "update_user": "Vibin Arumugam"
         },
         {
-            "run_id": "EXE201903251853323882",
+            "run_id": "EXE201903261219333890",
+            "run_description": "Test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 2,
+                "seconds": 14,
+                "milliseconds": 426
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-26T06:49:33.574Z",
+            "end_date_time": "2019-03-26T06:51:48.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903261110353889",
+            "run_description": "Test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 1,
+                "seconds": 46,
+                "milliseconds": 701
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-26T05:40:35.299Z",
+            "end_date_time": "2019-03-26T05:42:22.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903261106373888",
+            "run_description": "Test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 1,
+                "seconds": 49,
+                "milliseconds": 301
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-26T05:36:37.699Z",
+            "end_date_time": "2019-03-26T05:38:27.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903261055363887",
+            "run_description": "Test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 2,
+                "seconds": 40,
+                "milliseconds": 595
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-26T05:25:36.405Z",
+            "end_date_time": "2019-03-26T05:28:17.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903261048423886",
+            "run_description": "Test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 2,
+                "seconds": 43,
+                "milliseconds": 457
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-26T05:18:42.543Z",
+            "end_date_time": "2019-03-26T05:21:26.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903271609553895",
             "run_description": "test",
-            "status_value": "95",
-            "execution_status": "Cancelled",
-            "suite_case_name": "Test ASN ",
-            "duration_mins": {
-                "seconds": 4,
-                "milliseconds": 820
-            },
-            "exec_reference": 1299,
-            "exec_level": "C",
-            "start_date_time": "2019-03-25T13:23:32.180Z",
-            "end_date_time": "2019-03-25T13:23:37.000Z",
-            "update_user": "Vibin Arumugam"
-        },
-        {
-            "run_id": "EXE201903251849073881",
-            "run_description": "Test ASN",
-            "status_value": "95",
-            "execution_status": "Cancelled",
-            "suite_case_name": "Test ASN ",
-            "duration_mins": {
-                "seconds": 9,
-                "milliseconds": 728
-            },
-            "exec_reference": 1299,
-            "exec_level": "C",
-            "start_date_time": "2019-03-25T13:19:07.272Z",
-            "end_date_time": "2019-03-25T13:19:17.000Z",
-            "update_user": "Vibin Arumugam"
-        },
-        {
-            "run_id": "EXE201903251812503880",
-            "run_description": "hljjkl",
-            "status_value": "95",
-            "execution_status": "Cancelled",
-            "suite_case_name": "Create iLPN",
-            "duration_mins": {
-                "seconds": 5,
-                "milliseconds": 761
-            },
-            "exec_reference": 1277,
-            "exec_level": "C",
-            "start_date_time": "2019-03-25T12:42:50.239Z",
-            "end_date_time": "2019-03-25T12:42:56.000Z",
-            "update_user": "Vibin Arumugam"
-        },
-        {
-            "run_id": "EXE201903251810393879",
-            "run_description": "Create iLPN",
-            "status_value": "95",
-            "execution_status": "Cancelled",
-            "suite_case_name": "Create iLPN",
-            "duration_mins": {
-                "seconds": 7,
-                "milliseconds": 182
-            },
-            "exec_reference": 1277,
-            "exec_level": "C",
-            "start_date_time": "2019-03-25T12:40:39.818Z",
-            "end_date_time": "2019-03-25T12:40:47.000Z",
-            "update_user": "Vibin Arumugam"
-        },
-        {
-            "run_id": "EXE201903222024203878",
-            "run_description": "Fixed station returns receiving",
             "status_value": "90",
             "execution_status": "Completed",
-            "suite_case_name": "Fixed station returns receiving",
+            "suite_case_name": "Test",
             "duration_mins": {
                 "minutes": 3,
-                "seconds": 37,
-                "milliseconds": 822
+                "seconds": 52,
+                "milliseconds": 751
             },
-            "exec_reference": 1275,
-            "exec_level": "C",
-            "start_date_time": "2019-03-22T14:54:20.178Z",
-            "end_date_time": "2019-03-22T14:57:58.000Z",
-            "update_user": "Vibin Arumugam"
-        },
-        {
-            "run_id": "EXE201903201529403877",
-            "run_description": "Returns Receiving-Complimentary Shipping",
-            "status_value": "90",
-            "execution_status": "Completed",
-            "suite_case_name": "Returns Receiving-Complimentary Shipping",
-            "duration_mins": {
-                "minutes": 3,
-                "seconds": 24,
-                "milliseconds": 97
-            },
-            "exec_reference": 1281,
-            "exec_level": "C",
-            "start_date_time": "2019-03-20T09:59:40.903Z",
-            "end_date_time": "2019-03-20T10:03:05.000Z",
+            "exec_reference": 101,
+            "exec_level": "S",
+            "start_date_time": "2019-03-27T10:39:55.249Z",
+            "end_date_time": "2019-03-27T10:43:48.000Z",
             "update_user": "Sujith Anto"
         },
         {
-            "run_id": "EXE201903201520303876",
-            "run_description": "Returns Receiving- Charged for Shipping",
+            "run_id": "EXE201903271606233894",
+            "run_description": "Test",
             "status_value": "90",
             "execution_status": "Completed",
-            "suite_case_name": "Returns Receiving- Charged for Shipping",
+            "suite_case_name": "Test",
+            "duration_mins": {
+                "minutes": 2,
+                "seconds": 33,
+                "milliseconds": 56
+            },
+            "exec_reference": 101,
+            "exec_level": "S",
+            "start_date_time": "2019-03-27T10:36:23.944Z",
+            "end_date_time": "2019-03-27T10:38:57.000Z",
+            "update_user": "Sujith Anto"
+        },
+        {
+            "run_id": "EXE201903271524033893",
+            "run_description": "Reprint iLPN Label",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Reprint iLPN Label",
             "duration_mins": {
                 "minutes": 3,
-                "seconds": 10,
-                "milliseconds": 884
+                "seconds": 30,
+                "milliseconds": 507
             },
-            "exec_reference": 1283,
+            "exec_reference": 1285,
             "exec_level": "C",
-            "start_date_time": "2019-03-20T09:50:30.116Z",
-            "end_date_time": "2019-03-20T09:53:41.000Z",
-            "update_user": "Sujith Anto"
+            "start_date_time": "2019-03-27T09:54:03.493Z",
+            "end_date_time": "2019-03-27T09:57:34.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903271037213892",
+            "run_description": "tset",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test",
+            "duration_mins": {
+                "minutes": 1,
+                "seconds": 26,
+                "milliseconds": 563
+            },
+            "exec_reference": 101,
+            "exec_level": "S",
+            "start_date_time": "2019-03-27T05:07:21.437Z",
+            "end_date_time": "2019-03-27T05:08:48.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903261224223891",
+            "run_description": "Tt",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 1,
+                "seconds": 48,
+                "milliseconds": 361
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-26T06:54:22.639Z",
+            "end_date_time": "2019-03-26T06:56:11.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903261219333890",
+            "run_description": "Test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 2,
+                "seconds": 14,
+                "milliseconds": 426
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-26T06:49:33.574Z",
+            "end_date_time": "2019-03-26T06:51:48.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903261110353889",
+            "run_description": "Test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 1,
+                "seconds": 46,
+                "milliseconds": 701
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-26T05:40:35.299Z",
+            "end_date_time": "2019-03-26T05:42:22.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903261106373888",
+            "run_description": "Test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 1,
+                "seconds": 49,
+                "milliseconds": 301
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-26T05:36:37.699Z",
+            "end_date_time": "2019-03-26T05:38:27.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903261055363887",
+            "run_description": "Test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 2,
+                "seconds": 40,
+                "milliseconds": 595
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-26T05:25:36.405Z",
+            "end_date_time": "2019-03-26T05:28:17.000Z",
+            "update_user": "Vibin Arumugam"
+        },
+        {
+            "run_id": "EXE201903261048423886",
+            "run_description": "Test",
+            "status_value": "90",
+            "execution_status": "Completed",
+            "suite_case_name": "Test ASN ",
+            "duration_mins": {
+                "minutes": 2,
+                "seconds": 43,
+                "milliseconds": 457
+            },
+            "exec_reference": 1299,
+            "exec_level": "C",
+            "start_date_time": "2019-03-26T05:18:42.543Z",
+            "end_date_time": "2019-03-26T05:21:26.000Z",
+            "update_user": "Vibin Arumugam"
         }
     ],
     "fields": [

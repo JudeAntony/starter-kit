@@ -10,14 +10,9 @@ import * as executionResults from 'assets/mock-data/run-results.json';
     styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-    public version: string = environment.version;
+    public entries: String[] = ['10', '20', '30', '40'];
+    public rowsPerPage: String = '10';
     public rows = executionResults.rows;
-    public columns = [
-        { prop: 'run_id', name: 'Run Id' },
-        { prop: 'execution_status', name: 'Status' },
-        { prop: 'suite_case_name', name: 'Suite / Case' },
-        { prop: 'update_user', name: 'User' }
-    ];
     constructor() {}
 
     ngOnInit() {}
