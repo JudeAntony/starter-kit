@@ -1,0 +1,146 @@
+.ngx-datatable .datatable-footer {
+    position: absolute;
+    top: 0;
+    border-bottom: none;
+    .page-count {
+        display: none;
+    }
+    .datatable-pager {
+        .pager {
+            i {
+                color: $faded-font-color;
+            }
+        }
+    }
+}
+
+.ngx-datatable .datatable-header {
+    position: absolute;
+    top: 40px;
+}
+
+.ngx-datatable .datatable-body {
+    margin-top: 100px;
+}
+
+.ngx-datatable {
+    width: 100%;
+    margin: 0;
+    border: none;
+    background: $white;
+
+    &.bootstrap {
+        &.execution-results {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+
+            .datatable-header {
+                border-top: 1px solid $table-border-color;
+                width: inherit;
+                height: 60px !important;
+                border-bottom: none;
+                font-size: 14px;
+                background-color: $theme-background-color;
+
+                .datatable-header-inner {
+                    .datatable-header-cell {
+                        padding: 0 5px;
+                        text-align: left;
+                        text-indent: 0;
+                        height: 60px !important;
+                        line-height: 60px !important;
+                        box-sizing: border-box;
+                        color: #111;
+                        cursor: pointer;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        border-bottom: none;
+
+                        .resize-handle {
+                            cursor: unset;
+                        }
+                    }
+                }
+            }
+
+            .datatable-body {
+                .datatable-body-row {
+                    border-top: 1px solid $table-border-color;
+
+                    .datatable-body-cell {
+                        position: relative;
+                        box-sizing: border-box;
+                        color: $font-color;
+                        text-indent: 0;
+                    }
+
+                    .datatable-body-cell .datatable-body-cell-label {
+                        word-break: break-all;
+                    }
+
+                    .datatable-body-cell .datatable-body-cell-label span {
+                        user-select: none;
+                    }
+
+                    &.datatable-row-odd {
+                        background-color: transparent;
+                    }
+                    &.datatable-row-even {
+                        background-color: transparent;
+                    }
+
+                    .table-actions {
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+
+                    .action-stop {
+                        @include table-icons("stop-icon.svg");
+                    }
+
+                    .action-bar-graph {
+                        @include table-icons("bar-chart-icon.svg");
+                    }
+
+                    .action-export-excel {
+                        @include table-icons("export-excel-icon.svg");
+                    }
+                }
+            }
+        }
+        .datatable-footer {
+            border-top: none;
+            background-color: transparent;
+            .datatable-pager {
+                .pager {
+                    .pages {
+                        &:not(.disabled) {
+                            &.active {
+                                a {
+                                    background-color: $table-background-color;
+                                    color: $font-color;
+                                }
+                            }
+                        }
+                        &:hover {
+                            a {
+                                background-color: $table-background-color;
+                                color: $font-color;
+                            }
+                        }
+                    }
+                    li {
+                        &:not(.disabled) {
+                            &:hover {
+                                a {
+                                    background-color: $table-background-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
