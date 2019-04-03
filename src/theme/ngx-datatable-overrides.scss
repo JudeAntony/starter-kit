@@ -1,3 +1,28 @@
+.ngx-datatable .datatable-footer {
+    position: absolute;
+    top: 0;
+    border-bottom: none;
+    .page-count {
+        display: none;
+    }
+    .datatable-pager {
+        .pager {
+            i {
+                color: $faded-font-color;
+            }
+        }
+    }
+}
+
+.ngx-datatable .datatable-header {
+    position: absolute;
+    top: 40px;
+}
+
+.ngx-datatable .datatable-body {
+    margin-top: 100px;
+}
+
 .ngx-datatable {
     width: 100%;
     margin: 0;
@@ -6,17 +31,17 @@
 
     &.bootstrap {
         &.execution-results {
-            border-top: 1px solid #f0f1f1;
             -webkit-box-shadow: none;
             -moz-box-shadow: none;
             box-shadow: none;
 
             .datatable-header {
+                border-top: 1px solid $table-border-color;
                 width: inherit;
                 height: 60px !important;
                 border-bottom: none;
                 font-size: 14px;
-                background-color: #f9fafa;
+                background-color: $theme-background-color;
 
                 .datatable-header-inner {
                     .datatable-header-cell {
@@ -41,12 +66,12 @@
 
             .datatable-body {
                 .datatable-body-row {
-                    border-top: 1px solid #f0f1f1;
+                    border-top: 1px solid $table-border-color;
 
                     .datatable-body-cell {
                         position: relative;
                         box-sizing: border-box;
-                        color: #333;
+                        color: $font-color;
                         text-indent: 0;
                     }
 
@@ -64,11 +89,57 @@
                     &.datatable-row-even {
                         background-color: transparent;
                     }
+
+                    .table-actions {
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+
+                    .action-stop {
+                        @include table-icons("stop-icon.svg");
+                    }
+
+                    .action-bar-graph {
+                        @include table-icons("bar-chart-icon.svg");
+                    }
+
+                    .action-export-excel {
+                        @include table-icons("export-excel-icon.svg");
+                    }
                 }
             }
-
-            .datatable-footer {
-                border-top: none;
+        }
+        .datatable-footer {
+            border-top: none;
+            background-color: transparent;
+            .datatable-pager {
+                .pager {
+                    .pages {
+                        &:not(.disabled) {
+                            &.active {
+                                a {
+                                    background-color: $table-background-color;
+                                    color: $font-color;
+                                }
+                            }
+                        }
+                        &:hover {
+                            a {
+                                background-color: $table-background-color;
+                                color: $font-color;
+                            }
+                        }
+                    }
+                    li {
+                        &:not(.disabled) {
+                            &:hover {
+                                a {
+                                    background-color: $table-background-color;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

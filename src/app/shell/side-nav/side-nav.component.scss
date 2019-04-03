@@ -1,12 +1,29 @@
+.split-side-navs {
+    height: 45px;
+    background: #4b545f;
+}
+
+.test-nav-items {
+    width: 99px;
+    float: left;
+}
+
+.setting-nav-items {
+    width: 99px;
+    float: right;
+}
+
 .side-nav-contents {
     overflow-x: hidden;
     overflow-y: scroll;
     flex: 1;
-
     .nav-item-container {
         width: 100%;
         margin: 15px 0;
         font-size: 14px;
+        &:first-of-type {
+            margin-top: 0;
+        }
     }
 
     .nav-item {
@@ -16,12 +33,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        transition: 0.15s padding-left ease;
+        transition: all 0.2s ease;
 
         &.active {
-            padding-left: 1rem;
             background-color: #d2e4f8;
             border-radius: 3px;
+        }
+
+        &:hover {
+            padding-left: 1rem;
         }
     }
 

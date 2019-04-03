@@ -1,11 +1,22 @@
+.table {
+    position: relative;
+    margin: 0;
+}
+
 .table-controls {
     display: flex;
     justify-content: space-between;
-    margin: 0.5rem auto;
+    position: absolute;
+    top: 95px;
+    z-index: 1;
+}
+
+.rows-per-page {
+    padding-right: 20px;
 }
 
 .search {
-    min-width: 300px;
+    min-width: 250px;
     .has-search .form-control-feedback {
         position: absolute;
         z-index: 2;
