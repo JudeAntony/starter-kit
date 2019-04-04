@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./side-nav.component.scss']
 })
 export class SideNavComponent implements OnInit {
+    public showTestNavItems: Boolean = true;
+
     constructor() {}
 
     ngOnInit() {}
+
+    public toggleSplitNav(toggle?: string) {
+        this.showTestNavItems = toggle === 'testNav';
+    }
 }

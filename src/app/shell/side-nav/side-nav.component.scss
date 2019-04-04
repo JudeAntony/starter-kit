@@ -1,22 +1,66 @@
+.side-nav-container {
+    display: flex;
+    flex-direction: column;
+}
 .split-side-navs {
-    height: 45px;
-    background: #4b545f;
-}
+    order: -1;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 32px;
 
-.test-nav-items {
-    width: 99px;
-    float: left;
-}
+    .test-nav-items {
+        float: left;
+        .test-icon {
+            width: 30px;
+            height: 30px;
+            background: url("/assets/img/test-icon.svg") no-repeat center;
+            background-size: contain;
+            display: inline-block;
+        }
+        .test-icon-selected {
+            width: 30px;
+            height: 30px;
+            background: url("/assets/img/test-icon-selected.svg") no-repeat
+                center;
+            background-size: contain;
+            display: inline-block;
+        }
+    }
 
-.setting-nav-items {
-    width: 99px;
-    float: right;
+    .divider {
+        width: 1px;
+        height: 100%;
+        background: #e3e3e3;
+    }
+
+    .settings-nav-items {
+        float: right;
+        .settings-icon {
+            width: 30px;
+            height: 30px;
+            background: url("/assets/img/settings-icon.svg") no-repeat center;
+            background-size: contain;
+            display: inline-block;
+        }
+        .settings-icon-selected {
+            width: 30px;
+            height: 30px;
+            background: url("/assets/img/settings-icon-selected.svg") no-repeat
+                center;
+            background-size: contain;
+            display: inline-block;
+        }
+    }
 }
 
 .side-nav-contents {
     overflow-x: hidden;
     overflow-y: scroll;
     flex: 1;
+    background-color: #f9fafa;
+    height: 100vh;
     .nav-item-container {
         width: 100%;
         margin: 15px 0;
@@ -37,7 +81,8 @@
 
         &.active {
             background-color: #d2e4f8;
-            border-radius: 3px;
+            border-right: 2px solid #066ee0;
+            height: 3rem;
         }
 
         &:hover {

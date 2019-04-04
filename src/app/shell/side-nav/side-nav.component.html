@@ -1,38 +1,88 @@
-<div class="split-side-navs">
-    <div class="test-nav-items">
-        <a href="javascript: void(0)">Tests</a>
+<div class="side-nav-container">
+    <div class="split-side-navs">
+        <div class="test-nav-items">
+            <a href="javascript: void(0)" (click)="toggleSplitNav('testNav')">
+                <span
+                    class="test-icon{{ showTestNavItems ? '-selected' : '' }}"
+                ></span>
+            </a>
+        </div>
+        <div class="divider"></div>
+        <div class="settings-nav-items">
+            <a href="javascript: void(0)" (click)="toggleSplitNav()">
+                <span
+                    class="settings-icon{{
+                        !showTestNavItems ? '-selected' : ''
+                    }}"
+                ></span>
+            </a>
+        </div>
     </div>
-    <div class="settings-nav-items">
-        <a href="javascript: void(0)">Settings</a>
-    </div>
+    <nav class="side-nav-contents" *ngIf="showTestNavItems">
+        <div class="nav-item-container">
+            <span class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/about">
+                    <span translate>Execution Results</span>
+                </a>
+            </span>
+        </div>
+        <div class="nav-item-container">
+            <span class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/home">
+                    <span translate>Test Case</span>
+                </a>
+            </span>
+        </div>
+        <div class="nav-item-container">
+            <span class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/testsuite">
+                    <span translate>Test Suite</span>
+                </a>
+            </span>
+        </div>
+        <div class="nav-item-container">
+            <span class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/testdata">
+                    <span translate>Test Data</span>
+                </a>
+            </span>
+        </div>
+    </nav>
+    <nav class="side-nav-contents" *ngIf="!showTestNavItems">
+        <div class="nav-item-container">
+            <span class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/about">
+                    <span translate>Environment</span>
+                </a>
+            </span>
+        </div>
+        <div class="nav-item-container">
+            <span class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/home">
+                    <span translate>Application Code</span>
+                </a>
+            </span>
+        </div>
+        <div class="nav-item-container">
+            <span class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/testsuite">
+                    <span translate>Data Encryption</span>
+                </a>
+            </span>
+        </div>
+        <div class="nav-item-container">
+            <span class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/testdata">
+                    <span translate>DSL Maintenance</span>
+                </a>
+            </span>
+        </div>
+        <div class="nav-item-container">
+            <span class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/testdata">
+                    <span translate>Grid Console</span>
+                </a>
+            </span>
+        </div>
+    </nav>
 </div>
-<nav class="side-nav-contents">
-    <div class="nav-item-container">
-        <span class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/about">
-                <span translate>Execution Results</span>
-            </a>
-        </span>
-    </div>
-    <div class="nav-item-container">
-        <span class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/home">
-                <span translate>Test Case</span>
-            </a>
-        </span>
-    </div>
-    <div class="nav-item-container">
-        <span class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/testsuite">
-                <span translate>Test Suite</span>
-            </a>
-        </span>
-    </div>
-    <div class="nav-item-container">
-        <span class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/testdata">
-                <span translate>Test Data</span>
-            </a>
-        </span>
-    </div>
-</nav>
