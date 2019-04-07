@@ -10,6 +10,13 @@ import { AuthenticationService, I18nService } from '@app/core';
 })
 export class HeaderComponent implements OnInit {
     menuHidden = true;
+    public projectsList: String[] = [
+        'Ruelela A',
+        'Ruelela B',
+        'Ruelela C',
+        'Ruelela D'
+    ];
+    public selectedProject: String = this.projectsList[0];
 
     constructor(
         private router: Router,
@@ -18,6 +25,10 @@ export class HeaderComponent implements OnInit {
     ) {}
 
     ngOnInit() {}
+
+    public loadProjectData() {
+        return;
+    }
 
     toggleMenu() {
         this.menuHidden = !this.menuHidden;
