@@ -1,10 +1,16 @@
 // ng-select common overrides
 .ng-select.ng-select-single .ng-select-container {
     border: 1px solid #e3e3e3;
+    height: 30px;
+    min-height: 30px;
+    .ng-input {
+        font-size: 14px;
+    }
 }
 
 .rows-per-page {
     .ng-select.ng-select-single .ng-select-container {
         width: 60px;
+        height: 34px;
     }
 }

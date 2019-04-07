@@ -4,6 +4,8 @@
     /*   margin-bottom: $spacer; */
     background-color: $white;
     border-bottom: 1px solid #d4d7d9;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar-brand {
@@ -15,4 +17,8 @@
 
 .nav-item {
     color: $black;
+}
+
+.project-dropdown {
+    margin-right: 2rem;
 }
