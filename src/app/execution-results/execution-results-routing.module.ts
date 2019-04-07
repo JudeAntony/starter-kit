@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { extract } from '@app/core';
 import { Shell } from '@app/shell/shell.service';
 import { ExecutionResultsComponent } from './execution-results.component';
+import { ExecutionDetailsComponent } from './pages/execution-details/execution-details.component';
 
 const routes: Routes = [
     Shell.childRoutes([
@@ -11,6 +11,11 @@ const routes: Routes = [
             path: 'execution-results',
             component: ExecutionResultsComponent,
             data: { title: 'nuTan - Executions' }
+        },
+        {
+            path: 'execution-results/details/:runId',
+            component: ExecutionDetailsComponent,
+            data: { title: 'nuTan - ExecutionDetails' }
         }
     ])
 ];
