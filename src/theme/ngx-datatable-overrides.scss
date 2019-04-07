@@ -73,6 +73,9 @@
                         box-sizing: border-box;
                         color: $font-color;
                         text-indent: 0;
+                        a {
+                            text-decoration: none;
+                        }
                     }
 
                     .datatable-body-cell .datatable-body-cell-label {

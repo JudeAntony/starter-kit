@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="si" viewBox="0 0 1792 1408">
+    <g fill="#808080" stroke="none" stroke-width="1px">
+        <title id="sjsi-awesome-server-title" fill="#808080" stroke="none" stroke-width="1px">
+            icon server
+        </title>
+        <path fill="#808080" stroke="none" stroke-width="1px" d="M128 1280h1024v-128H128v128zm0-512h1024V640H128v128zm1568 448q0-40-28-68t-68-28-68 28-28 68 28 68 68 28 68-28 28-68zM128 256h1024V128H128v128zm1568 448q0-40-28-68t-68-28-68 28-28 68 28 68 68 28 68-28 28-68zm0-512q0-40-28-68t-68-28-68 28-28 68 28 68 68 28 68-28 28-68zm96 832v384H0v-384h1792zm0-512v384H0V512h1792zm0-512v384H0V0h1792z"/>
+    </g>
+</svg>

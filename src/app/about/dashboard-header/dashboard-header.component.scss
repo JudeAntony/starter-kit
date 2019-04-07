@@ -1,3 +1,4 @@
+@import "../../../theme/app-mixins.scss";
 .content-header-wrapper {
     margin: 0.5rem 0 2rem;
     display: flex;
@@ -11,6 +12,9 @@
     padding-top: 8px;
     h4 {
         margin-bottom: 0;
+    }
+    .results-icon {
+        @include insert-icons("test-results-icon.svg", 20px, 19px);
     }
 }
 .content-button {

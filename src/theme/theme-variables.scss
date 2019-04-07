@@ -63,20 +63,8 @@ $table-background-color: #d2e4f8;
     color: $faded-font-color;
 }
 
-@mixin table-icons($url) {
-    $completeURL: str-insert(
-        $string: "/assets/img/",
-        $insert: $url,
-        $index: -1
-    );
-    width: 22px;
-    height: 22px;
-    background: url($completeURL) no-repeat center;
-    background-size: contain;
-    display: inline-block;
-}
-
 // Use Bootstrap defaults for other variables, imported here so we can access all app variables in one place when used
 // in components.
 @import "~bootstrap/scss/_functions";
 @import "~bootstrap/scss/_variables";
+@import "./app-mixins.scss";
