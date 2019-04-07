@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="table">
+        <app-execution-results-header
+            [pageHeader]="'Execution Results'"
+            [pageIcon]="'results-icon'"
+            [pageDescription]="'Manage execution results'"
+            [pageButtonText]="'Refresh'"
+            (buttonAction)="refreshResults()"
+        ></app-execution-results-header>
+        <div class="table-controls">
+            <div class="rows-per-page">
+                <ng-select
+                    [items]="entries"
+                    [(ngModel)]="rowsPerPage"
+                    [clearable]="false"
+                    [searchable]="false"
+                    required
+                >
+                </ng-select>
+            </div>
+            <div class="search">
+                <div class="has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input
+                        type="text"
+                        placeholder="Search"
+                        class="search-feild"
+                    />
+                </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <app-execution-results-table
+            [rows]="rows"
+            [rowsPerPage]="rowsPerPage"
+        ></app-execution-results-table>
+    </div>
+</div>

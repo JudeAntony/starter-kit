@@ -1,0 +1,15 @@
+<div class="content-header-wrapper">
+    <div class="content-header">
+        <h4><span class="{{ pageIcon }}"></span>{{ pageHeader }}</h4>
+        <span class="description-text" [innerHTML]="pageDescription"></span>
+    </div>
+    <div class="content-button" *ngIf="pageButtonText">
+        <button
+            type="button"
+            class="btn btn-sm btn-outline-primary"
+            (click)="onClick()"
+        >
+            {{ pageButtonText }}
+        </button>
+    </div>
+</div>

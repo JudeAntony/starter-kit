@@ -33,7 +33,11 @@
                         'results-icon-active': rla.isActive
                     }"
                 ></span>
-                <a class="nav-link" routerLink="/about">
+                <a
+                    class="nav-link"
+                    [routerLink]="['/execution-results']"
+                    routerLinkActive="router-link-active"
+                >
                     <span translate>Execution Results</span>
                 </a>
             </span>
@@ -52,7 +56,7 @@
                         'test-case-icon-active': cla.isActive
                     }"
                 ></span>
-                <a class="nav-link" routerLink="/home">
+                <a class="nav-link" routerLink="/about">
                     <span translate>Test Case</span>
                 </a>
             </span>
