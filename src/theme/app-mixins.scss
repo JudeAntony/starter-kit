@@ -1,0 +1,16 @@
+@mixin insert-icons($img-name, $width: 20px, $height: 20px) {
+    $completeURL: str-insert(
+        $string: "/assets/img/",
+        $insert: $img-name,
+        $index: -1
+    );
+    width: $width;
+    height: $height;
+    background: url($completeURL) no-repeat center;
+    background-size: contain;
+    display: inline-block;
+}
+
+@mixin table-icons($icon-name) {
+    @include insert-icons($icon-name, 22px, 22px);
+}

@@ -1,3 +1,5 @@
+@import "../../../theme/app-mixins.scss";
+
 .side-nav-container {
     display: flex;
     flex-direction: column;
@@ -73,24 +75,61 @@
     .nav-item {
         color: #6d727c;
         margin-bottom: 5px;
-        padding-left: 0.5rem;
+        padding-left: 1rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
         transition: all 0.2s ease;
 
         &.active {
-            background-color: #d2e4f8;
+            background-color: #f0f8ff;
             border-right: 2px solid #066ee0;
             height: 3rem;
         }
 
         &:hover {
-            padding-left: 1rem;
+            padding-left: 1.5rem;
         }
     }
 
     .nav-link {
         color: #066ee0;
+        padding: 0.5rem;
+    }
+
+    .icon {
+        padding-right: 5px;
+    }
+
+    .results-icon {
+        @include insert-icons("test-results-icon.svg", 15px, 15px);
+    }
+
+    .results-icon-active {
+        @include insert-icons("test-results-icon-active.svg", 15px, 15px);
+    }
+
+    .test-case-icon {
+        @include insert-icons("test-case-icon.svg", 15px, 15px);
+    }
+
+    .test-case-icon-active {
+        @include insert-icons("test-case-icon-active.svg", 15px, 15px);
+    }
+
+    .test-suite-icon {
+        @include insert-icons("test-suite-icon.svg", 15px, 15px);
+    }
+
+    .test-suite-icon-active {
+        @include insert-icons("test-suite-icon-active.svg", 15px, 15px);
+    }
+
+    .test-data-icon {
+        @include insert-icons("test-data-icon.svg", 15px, 15px);
+    }
+
+    .test-data-icon-active {
+        @include insert-icons("test-data-icon-active.svg", 15px, 15px);
     }
 }

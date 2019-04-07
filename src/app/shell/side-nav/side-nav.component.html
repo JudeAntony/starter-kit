@@ -20,28 +20,76 @@
     </div>
     <nav class="side-nav-contents" *ngIf="showTestNavItems">
         <div class="nav-item-container">
-            <span class="nav-item" routerLinkActive="active">
+            <span
+                class="nav-item"
+                [ngClass]="{ active: rla.isActive }"
+                routerLinkActive
+                #rla="routerLinkActive"
+            >
+                <span
+                    class="icon"
+                    [ngClass]="{
+                        'results-icon': !rla.isActive,
+                        'results-icon-active': rla.isActive
+                    }"
+                ></span>
                 <a class="nav-link" routerLink="/about">
                     <span translate>Execution Results</span>
                 </a>
             </span>
         </div>
         <div class="nav-item-container">
-            <span class="nav-item" routerLinkActive="active">
+            <span
+                class="nav-item"
+                [ngClass]="{ active: cla.isActive }"
+                routerLinkActive
+                #cla="routerLinkActive"
+            >
+                <span
+                    class="icon"
+                    [ngClass]="{
+                        'test-case-icon': !cla.isActive,
+                        'test-case-icon-active': cla.isActive
+                    }"
+                ></span>
                 <a class="nav-link" routerLink="/home">
                     <span translate>Test Case</span>
                 </a>
             </span>
         </div>
         <div class="nav-item-container">
-            <span class="nav-item" routerLinkActive="active">
+            <span
+                class="nav-item"
+                [ngClass]="{ active: sla.isActive }"
+                routerLinkActive
+                #sla="routerLinkActive"
+            >
+                <span
+                    class="icon"
+                    [ngClass]="{
+                        'test-suite-icon': !sla.isActive,
+                        'test-suite-icon-active': sla.isActive
+                    }"
+                ></span>
                 <a class="nav-link" routerLink="/testsuite">
                     <span translate>Test Suite</span>
                 </a>
             </span>
         </div>
         <div class="nav-item-container">
-            <span class="nav-item" routerLinkActive="active">
+            <span
+                class="nav-item"
+                [ngClass]="{ active: dla.isActive }"
+                routerLinkActive
+                #dla="routerLinkActive"
+            >
+                <span
+                    class="icon"
+                    [ngClass]="{
+                        'test-data-icon': !dla.isActive,
+                        'test-data-icon-active': dla.isActive
+                    }"
+                ></span>
                 <a class="nav-link" routerLink="/testdata">
                     <span translate>Test Data</span>
                 </a>
