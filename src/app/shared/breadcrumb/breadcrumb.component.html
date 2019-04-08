@@ -1,0 +1,26 @@
+<nav class="breadcrumb-wrapper">
+    <ol class="app-breadcrumb">
+        <li
+            *ngFor="let breadcrumb of breadcrumbs; let i = index"
+            [routerLinkActive]="'active-link'"
+            [routerLinkActiveOptions]="{ exact: true }"
+        >
+            <span *ngIf="i === breadcrumbs.length - 1">{{
+                breadcrumb.label
+            }}</span>
+            <a
+                *ngIf="i !== breadcrumbs.length - 1"
+                [routerLink]="[breadcrumb.url]"
+                >{{ breadcrumb.label }}</a
+            >
+        </li>
+    </ol>
+    <!--     <ul class="breadcrumb-items">
+        <li class="breadcrumb-item">
+            <a href="javascript: void(0)" class="breadcrumb-item-link">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <span>Execution Results</span>
+        </li>
+    </ul> -->
+</nav>

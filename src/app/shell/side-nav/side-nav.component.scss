@@ -6,11 +6,12 @@
 }
 .split-side-navs {
     order: -1;
-    height: 48px;
+    height: 49px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0 32px;
+    border-bottom: 1px solid #e3e3e3;
 
     .test-nav-items {
         float: left;
@@ -83,8 +84,9 @@
 
         &.active {
             background-color: #f0f8ff;
-            border-right: 2px solid #066ee0;
-            height: 3rem;
+            /*           border-right: 2px solid #066ee0;
+            height: 3rem; */
+            content: ">";
         }
 
         &:hover {

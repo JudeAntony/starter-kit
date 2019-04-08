@@ -1,16 +1,18 @@
 @import "../../../../theme/app-mixins.scss";
 .content-header-wrapper {
-    margin: 0.5rem 0 2rem;
+    margin: 0.5rem 0 1.5rem;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #e3e3e3;
     align-items: flex-end;
+    padding-right: 1rem;
+    padding-left: 1rem;
     padding-bottom: 0.5rem;
 }
 .content-header {
     order: 0;
     padding-top: 8px;
-    h4 {
+    h5 {
         margin-bottom: 0;
     }
     .results-icon {

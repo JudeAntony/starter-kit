@@ -1,12 +1,11 @@
+<app-execution-results-header
+    [pageHeader]="'Execution Results'"
+    [pageIcon]="'results-icon'"
+    [pageButtonText]="'Refresh'"
+    (buttonAction)="refreshResults()"
+></app-execution-results-header>
 <div class="container-fluid">
     <div class="table">
-        <app-execution-results-header
-            [pageHeader]="'Execution Results'"
-            [pageIcon]="'results-icon'"
-            [pageDescription]="'Manage execution results'"
-            [pageButtonText]="'Refresh'"
-            (buttonAction)="refreshResults()"
-        ></app-execution-results-header>
         <div class="table-controls">
             <div class="rows-per-page">
                 <ng-select

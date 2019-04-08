@@ -12,6 +12,7 @@ import { ExecutionResultsComponent } from './execution-results.component';
 import { ExecutionResultsHeaderComponent } from './components/execution-results-header/execution-results-header.component';
 import { ExecutionResultsTableComponent } from './components/execution-results-table/execution-results-table.component';
 import { ExecutionDetailsComponent } from './pages/execution-details/execution-details.component';
+import { SharedModule } from '@app/shared';
 
 @NgModule({
     imports: [
@@ -20,7 +21,8 @@ import { ExecutionDetailsComponent } from './pages/execution-details/execution-d
         TranslateModule,
         ExecutionResultsRoutingModule,
         NgxDatatableModule,
-        NgSelectModule
+        NgSelectModule,
+        SharedModule
     ],
     declarations: [
         ExecutionResultsComponent,
