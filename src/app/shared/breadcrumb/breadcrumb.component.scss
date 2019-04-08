@@ -1,0 +1,45 @@
+.breadcrumb-wrapper {
+    background-color: #f9fafa;
+    margin-bottom: 0;
+    padding: 15px 15px;
+}
+
+.app-breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+    transition: width 0.35s ease-out;
+
+    li {
+        display: inline-block;
+
+        &:before {
+            padding: 0 4px;
+            color: #666;
+            content: ">";
+        }
+
+        &:first-child:before {
+            display: none;
+        }
+
+        a {
+            color: #066ee0;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        span {
+            cursor: default;
+        }
+
+        &.active-link {
+            a {
+                color: #888;
+            }
+        }
+    }
+}

@@ -1,6 +1,9 @@
 {
     "APP_NAME": "nuTAN",
     "About": "About",
+    "Executions": "nuTan - Executions",
+    "Execution-Details": "nuTan - ExecutionDetails",
+    "Test-Case": "nuTan - TestCase",
     "Hello world !": "Hello world !",
     "Home": "Home",
     "Logged in as": "Logged in as",

@@ -1,7 +1,15 @@
 <div class="content-header-wrapper">
     <div class="content-header">
-        <h4><span class="{{ pageIcon }}"></span>{{ pageHeader }}</h4>
-        <span class="description-text" [innerHTML]="pageDescription"></span>
+        <h5>
+            <span class="{{ pageIcon }}"></span>{{ pageHeader }}
+            <small
+                *ngIf="pageSubHeader"
+                class="text-muted"
+                [innerHTML]="pageSubHeader"
+                >With faded secondary text</small
+            >
+        </h5>
+        <small class="text-muted" [innerHTML]="pageDescription"></small>
     </div>
     <div class="content-button" *ngIf="pageButtonText">
         <button
