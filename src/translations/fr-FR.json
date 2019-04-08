@@ -1,6 +1,9 @@
 {
     "APP_NAME": "nuTAN",
     "About": "A propos",
+    "Executions": "nuTan - Executions",
+    "Execution-Details": "nuTan - ExecutionDetails",
+    "Test-Case": "nuTan - TestCase",
     "Hello world !": "Bonjour le monde !",
     "Home": "Accueil",
     "Logged in as": "Connecté en tant que",
