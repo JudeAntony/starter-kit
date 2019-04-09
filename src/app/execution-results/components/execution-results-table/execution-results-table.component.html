@@ -9,7 +9,7 @@
     [rowHeight]="50"
     [reorderable]="false"
 >
-    <ngx-datatable-column prop="run_id" name="Run Id">
+    <ngx-datatable-column prop="run_id" name="Run Id" [minWidth]="200">
         <ng-template ngx-datatable-cell-template let-row="row">
             <a
                 [routerLink]="['/execution-results/details', row.run_id]"
@@ -19,21 +19,35 @@
             </a>
         </ng-template>
     </ngx-datatable-column>
-    <ngx-datatable-column
-        prop="execution_status"
-        name="Status"
-    ></ngx-datatable-column>
+    <ngx-datatable-column name="Status | Duration" [minWidth]="200">
+        <ng-template ngx-datatable-cell-template let-row="row">
+            <div>
+                {{ row.execution_status }} |
+                <small
+                    >{{ row.duration_mins.minutes }}m :
+                    {{ row.duration_mins.seconds }}s :
+                    {{ row.duration_mins.milliseconds }}ms</small
+                >
+            </div>
+        </ng-template>
+    </ngx-datatable-column>
     <ngx-datatable-column
         prop="suite_case_name"
         name="Suite / Case"
+        [minWidth]="100"
     ></ngx-datatable-column>
-    <ngx-datatable-column prop="update_user" name="User"></ngx-datatable-column>
+    <ngx-datatable-column
+        prop="update_user"
+        name="User"
+        [minWidth]="100"
+    ></ngx-datatable-column>
     <ngx-datatable-column
         [headerClass]="'text-center'"
         [sortable]="false"
         [canAutoResize]="false"
         [draggable]="false"
         [resizeable]="false"
+        [minWidth]="200"
     >
         <ng-template ngx-datatable-header-template>
             <span>Action</span>
