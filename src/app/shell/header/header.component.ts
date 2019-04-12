@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { AuthenticationService, I18nService } from '@app/core';
@@ -9,6 +9,8 @@ import { AuthenticationService, I18nService } from '@app/core';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+    @Output() public toggleSideNav = new EventEmitter();
+
     menuHidden = true;
     public projectsList: String[] = [
         'Ruelela A',
@@ -32,6 +34,7 @@ export class HeaderComponent implements OnInit {
 
     toggleMenu() {
         this.menuHidden = !this.menuHidden;
+        this.toggleSideNav.emit();
     }
 
     setLanguage(language: string) {
