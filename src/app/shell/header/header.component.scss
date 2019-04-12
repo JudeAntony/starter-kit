@@ -1,4 +1,5 @@
 @import "src/theme/theme-variables";
+@import "src/theme/app-mixins.scss";
 
 .navbar {
     /*   margin-bottom: $spacer; */
@@ -6,6 +7,15 @@
     border-bottom: 1px solid #d4d7d9;
     display: flex;
     justify-content: space-between;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler-icon {
+    @include insert-icons("toggle-icon.svg");
 }
 
 .navbar-brand {

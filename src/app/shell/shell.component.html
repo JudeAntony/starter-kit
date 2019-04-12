@@ -1,14 +1,18 @@
 <section class="shell-container">
-    <app-header></app-header>
+    <app-header (toggleSideNav)="toggleSideNav()"></app-header>
     <section
         class="section main-container"
         data-section-type="Content container"
     >
-        <main class="main-content">
-            <router-outlet></router-outlet>
+        <main class="main-content-wrapper">
+            <div class="main-content" [ngClass]="{ 'full-width': hideSideNav }">
+                <router-outlet></router-outlet>
+            </div>
         </main>
-        <aside class="side-nav">
-            <app-side-nav></app-side-nav>
+        <aside class="side-nav-wrapper">
+            <div class="side-nav" [ngClass]="{ hide: hideSideNav }">
+                <app-side-nav></app-side-nav>
+            </div>
         </aside>
     </section>
 </section>
