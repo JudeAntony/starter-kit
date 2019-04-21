@@ -1,8 +1,85 @@
 <app-breadcrumb [breadcrumbs]="breadcrumbs"></app-breadcrumb>
 <app-execution-results-header
-    [pageHeader]="'Execution Details'"
+    [pageHeader]="currentRunId"
     [pageIcon]="'results-icon'"
-    [pageDescription]="currentRunId"
+    [pageDescription]="'Reprint iLPN Label'"
+    [buttonDetails]="buttonDetails"
 >
 </app-execution-results-header>
-<div class="container-fluid"></div>
+<div class="details">
+    <div class="user">
+        <div class="label">User</div>
+        <span class="value">Vibin Arumugam</span>
+    </div>
+    <div class="start-date-time">
+        <div class="label">Start Date Time</div>
+        <span class="value">03/27/2019 10:37:55.24</span>
+    </div>
+    <div class="end-date-time">
+        <div class="label">End Date Time</div>
+        <span class="value">03/27/2019 10:39:55.24</span>
+    </div>
+    <!--     <div class="execution-ref">
+        <div class="label">Description</div>
+        <span class="value">Reprint iLPN Label</span>
+    </div> -->
+    <div class="exec-lvl">
+        <div class="label">Execution Lvl</div>
+        <span class="value">S</span>
+    </div>
+    <!--     <div class="logs">
+        <div class="label">Logs</div>
+        <div class="value">
+            <button
+                type="button"
+                class="btn btn-sm btn-outline-secondary"
+                (click)="onButtonClick('App Log')"
+            >
+                App
+            </button>
+            <button
+                type="button"
+                class="btn btn-sm btn-outline-secondary"
+                (click)="onButtonClick('Tech Log')"
+            >
+                Tech
+            </button>
+        </div>
+    </div> -->
+</div>
+<div class="execution-details">
+    <div class="container-fluid">
+        <div class="case-list">
+            <div class="list">
+                <app-execution-details-table
+                    [rows]="detailRows"
+                    (selectedCase)="setCurrentTestCase($event)"
+                >
+                </app-execution-details-table>
+            </div>
+            <div class="case-list-details container-fluid">
+                <div class="case-details" *ngIf="currentTestCase">
+                    <div class="data-set-name">
+                        <div class="label">Data Set Name</div>
+                        <span class="value">{{
+                            currentTestCase.data_set_name
+                        }}</span>
+                    </div>
+                    <div class="duration">
+                        <div class="label">Duration</div>
+                        <span class="value">{{
+                            currentTestCase.duration_in_mins
+                        }}</span>
+                    </div>
+                    <div class="environment">
+                        <div class="label">Environment</div>
+                        <span class="value">{{
+                            currentTestCase.environment
+                        }}</span>
+                    </div>
+                </div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

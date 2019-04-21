@@ -1,0 +1,99 @@
+<div class="case-steps">
+    <div class="steps-list">
+        <ng-select
+            [items]="steps"
+            [searchable]="false"
+            [(ngModel)]="selectedStep"
+            bindLabel="steps"
+            bindValue="s_no"
+            placeholder="Steps"
+        >
+            <ng-template ng-label-tmp let-item="item">
+                <div class="steps">
+                    <div
+                        class="step-status"
+                        [ngClass]="{
+                            'step-success': item.status === 'Success',
+                            'step-failure': item.status !== 'Success'
+                        }"
+                    ></div>
+                    <div class="step-no">{{ item.s_no }}</div>
+                    <div class="step-name">{{ item.steps }}</div>
+                </div>
+            </ng-template>
+            <ng-template ng-option-tmp let-item="item">
+                <div class="steps">
+                    <div
+                        class="step-status"
+                        [ngClass]="{
+                            'step-success': item.status === 'Success',
+                            'step-failure': item.status !== 'Success'
+                        }"
+                    ></div>
+                    <div class="step-no">{{ item.s_no }}</div>
+                    <div class="step-name">{{ item.steps }}</div>
+                </div>
+            </ng-template>
+        </ng-select>
+    </div>
+    <div class="steps-description" *ngIf="selectedStep">
+        <div class="descriptions">
+            <div class="desc-label">Browser/Tab:</div>
+            <div class="desc-value">Browser</div>
+        </div>
+        <div class="descriptions">
+            <div class="desc-label">Browser name/TAB ID:</div>
+            <div class="desc-value">chrome</div>
+        </div>
+        <div class="descriptions">
+            <div class="desc-label">Session reference:</div>
+            <div class="desc-value">1</div>
+        </div>
+        <div class="descriptions">
+            <div class="desc-label">Platform:</div>
+            <div class="desc-value">WIN10</div>
+        </div>
+        <div class="descriptions">
+            <div class="desc-label">Version:</div>
+            <div class="desc-value">72.0</div>
+        </div>
+        <div class="descriptions">
+            <div class="desc-label">Platform:</div>
+            <div class="desc-value">4</div>
+        </div>
+        <div class="descriptions">
+            <div class="desc-label">Browser/Tab:</div>
+            <div class="desc-value">Browser</div>
+        </div>
+        <div class="descriptions">
+            <div class="desc-label">Browser name/TAB ID:</div>
+            <div class="desc-value">chrome</div>
+        </div>
+        <div class="descriptions">
+            <div class="desc-label">Session reference:</div>
+            <div class="desc-value">1</div>
+        </div>
+        <div class="descriptions">
+            <div class="desc-label">Platform:</div>
+            <div class="desc-value">WIN10</div>
+        </div>
+    </div>
+    <div class="screenshot" *ngIf="selectedStep">
+        <img class="img-fluid" src="/assets/img/username.png" />
+    </div>
+    <div class="callout-message" *ngIf="!selectedStep">
+        <div class="alert alert-light" role="alert">
+            <h4 class="alert-heading">Test Case Steps</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <hr />
+            <p class="mb-0">
+                Choose a step from the select menu to see more details.
+            </p>
+        </div>
+    </div>
+</div>

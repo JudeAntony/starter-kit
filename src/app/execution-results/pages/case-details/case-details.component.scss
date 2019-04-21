@@ -1,0 +1,59 @@
+@import "../../../../theme/app-mixins.scss";
+
+.case-steps {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .steps-list {
+        margin: 5px 0;
+        .steps {
+            display: flex;
+            align-items: center;
+            align-content: flex-start;
+
+            .step-status {
+                &.step-success {
+                    @include insert-icons("step-success-icon.svg", 30px, 30px);
+                }
+                &.step-failure {
+                    @include insert-icons("step-failure-icon.svg", 30px, 30px);
+                }
+            }
+
+            .step-no {
+                margin-right: 20px;
+                margin-left: -19px;
+            }
+        }
+    }
+    .steps-description {
+        margin: 0 1rem;
+        min-width: 400px;
+        max-width: 600px;
+        padding: 0 0.5rem;
+        .descriptions {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 15px 0;
+            border-bottom: 1px solid #f0f1f1;
+            min-height: 2rem;
+            max-height: 8rem;
+            overflow: auto;
+
+            .desc-value {
+                margin-left: 1rem;
+                color: #888;
+            }
+        }
+    }
+    .callout-message {
+        height: 200px;
+        width: 500px;
+    }
+}
+.screenshot {
+    margin: 2rem 0;
+}

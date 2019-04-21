@@ -6,10 +6,10 @@
     [headerHeight]="40"
     [footerHeight]="40"
     [limit]="rowsPerPage"
-    [rowHeight]="50"
+    [rowHeight]="70"
     [reorderable]="false"
 >
-    <ngx-datatable-column prop="run_id" name="Run Id" [minWidth]="200">
+    <ngx-datatable-column prop="run_id" name="Run Id" [minWidth]="175">
         <ng-template ngx-datatable-cell-template let-row="row">
             <a
                 [routerLink]="['/execution-results/details', row.run_id]"
@@ -23,23 +23,27 @@
         <ng-template ngx-datatable-cell-template let-row="row">
             <div>
                 {{ row.execution_status }} |
-                <small
+                <small *ngIf="row.execution; else noDuration">
                     >{{ row.duration_mins.minutes }}m :
                     {{ row.duration_mins.seconds }}s :
-                    {{ row.duration_mins.milliseconds }}ms</small
-                >
+                    {{ row.duration_mins.milliseconds }}ms
+                </small>
+                <ng-template #noDuration>
+                    <small>00:00:00</small>
+                </ng-template>
             </div>
         </ng-template>
     </ngx-datatable-column>
     <ngx-datatable-column
         prop="suite_case_name"
         name="Suite / Case"
-        [minWidth]="100"
+        [width]="50"
+        [cellClass]="'text-center'"
     ></ngx-datatable-column>
     <ngx-datatable-column
         prop="update_user"
         name="User"
-        [minWidth]="100"
+        [width]="100"
     ></ngx-datatable-column>
     <ngx-datatable-column
         [headerClass]="'text-center'"

@@ -1,0 +1,42 @@
+<!-- <ngx-datatable
+    class="bootstrap execution-details-table"
+    [rows]="rows"
+    [loadingIndicator]="true"
+    [columnMode]="'force'"
+    [headerHeight]="40"
+    [footerHeight]="40"
+    [limit]="20"
+    [rowHeight]="50"
+    [reorderable]="false"
+>
+<ngx-datatable-column prop="test_case" name="Test Case" [minWidth]="230">
+    <ng-template let-column="column" ngx-datatable-header-template>
+        <span>Test Cases</span>
+    </ng-template>
+    <ng-template ngx-datatable-cell-template let-row="row">
+        <a href="javascript: void(0)" (click)="onSelectCase(row.test_case_id)">
+            {{row.test_case}}
+        </a>
+    </ng-template>
+</ngx-datatable-column>
+</ngx-datatable> -->
+<div class="case-list-contents">
+    <a
+        *ngFor="let item of rows"
+        (click)="onSelectCase(item)"
+        [routerLink]="['test-case', item.test_case_id]"
+        routerLinkActive
+        #rla="routerLinkActive"
+    >
+        <div class="list-item-container">
+            <span class="nav-item">
+                {{ item.test_case }}
+            </span>
+            <div class="highlights">
+                <div class="percentage">{{ item.percentage_passed }}</div>
+                <div *ngIf="rla.isActive" class="active-case"></div>
+                <div class="status">{{ item.status }}</div>
+            </div>
+        </div>
+    </a>
+</div>

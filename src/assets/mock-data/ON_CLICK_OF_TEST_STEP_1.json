@@ -1,0 +1,63 @@
+{
+    "command": "SELECT",
+    "rowCount": 5,
+    "oid": null,
+    "rows": [
+        {
+            "params": "Browser/Tab",
+            "core_function_id": 11,
+            "param_seq": 1
+        },
+        {
+            "params": "Browser name/TAB ID",
+            "core_function_id": 11,
+            "param_seq": 2
+        },
+        {
+            "params": "Session reference",
+            "core_function_id": 11,
+            "param_seq": 3
+        },
+        {
+            "params": "Platform",
+            "core_function_id": 11,
+            "param_seq": 4
+        },
+        {
+            "params": "Version",
+            "core_function_id": 11,
+            "param_seq": 5
+        }
+    ],
+    "fields": [
+        {
+            "name": "params",
+            "tableID": 431671,
+            "columnID": 8,
+            "dataTypeID": 1043,
+            "dataTypeSize": -1,
+            "dataTypeModifier": 54,
+            "format": "text"
+        },
+        {
+            "name": "core_function_id",
+            "tableID": 431676,
+            "columnID": 1,
+            "dataTypeID": 23,
+            "dataTypeSize": 4,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "param_seq",
+            "tableID": 431671,
+            "columnID": 3,
+            "dataTypeID": 23,
+            "dataTypeSize": 4,
+            "dataTypeModifier": -1,
+            "format": "text"
+        }
+    ],
+    "_parsers": [null, null, null],
+    "rowAsArray": false
+}

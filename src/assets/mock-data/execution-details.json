@@ -1,0 +1,125 @@
+{
+    "command": "SELECT",
+    "rowCount": 2,
+    "oid": null,
+    "rows": [
+        {
+            "run": "EXE201904151906134977",
+            "test_case": "Core_function_testing_004",
+            "test_case_id": "1334",
+            "status": "Success",
+            "duration_in_mins": "0:0:19:96",
+            "percentage_passed": "100%",
+            "iteration": "1",
+            "data_set_name": "test_data_010",
+            "data_set_id": 629,
+            "environment": "Gmail - Test Mailvb1"
+        },
+        {
+            "run": "EXE201904151906134977",
+            "test_case": "UI_Compare_Data",
+            "test_case_id": "1370",
+            "status": "Success",
+            "duration_in_mins": "0:0:13:69",
+            "percentage_passed": "100%",
+            "iteration": "1",
+            "data_set_name": "compare_data",
+            "data_set_id": 670,
+            "environment": "Gmail - Test Mailvb1"
+        }
+    ],
+    "fields": [
+        {
+            "name": "run",
+            "tableID": 268805,
+            "columnID": 2,
+            "dataTypeID": 1043,
+            "dataTypeSize": -1,
+            "dataTypeModifier": 25,
+            "format": "text"
+        },
+        {
+            "name": "test_case",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "test_case_id",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "status",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "duration_in_mins",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "percentage_passed",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "iteration",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "data_set_name",
+            "tableID": 268873,
+            "columnID": 2,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "data_set_id",
+            "tableID": 268873,
+            "columnID": 1,
+            "dataTypeID": 23,
+            "dataTypeSize": 4,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "environment",
+            "tableID": 268789,
+            "columnID": 2,
+            "dataTypeID": 1043,
+            "dataTypeSize": -1,
+            "dataTypeModifier": 54,
+            "format": "text"
+        }
+    ],
+    "_parsers": [null, null, null, null, null, null, null, null, null, null],
+    "rowAsArray": false
+}

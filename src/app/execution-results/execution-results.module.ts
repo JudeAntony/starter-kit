@@ -13,6 +13,8 @@ import { ExecutionResultsHeaderComponent } from './components/execution-results-
 import { ExecutionResultsTableComponent } from './components/execution-results-table/execution-results-table.component';
 import { ExecutionDetailsComponent } from './pages/execution-details/execution-details.component';
 import { SharedModule } from '@app/shared';
+import { ExecutionDetailsTableComponent } from './components/execution-details-table/execution-details-table.component';
+import { CaseDetailsComponent } from './pages/case-details/case-details.component';
 
 @NgModule({
     imports: [
@@ -28,7 +30,9 @@ import { SharedModule } from '@app/shared';
         ExecutionResultsComponent,
         ExecutionResultsHeaderComponent,
         ExecutionResultsTableComponent,
-        ExecutionDetailsComponent
+        ExecutionDetailsComponent,
+        ExecutionDetailsTableComponent,
+        CaseDetailsComponent
     ]
 })
 export class ExecutionResultsModule {}

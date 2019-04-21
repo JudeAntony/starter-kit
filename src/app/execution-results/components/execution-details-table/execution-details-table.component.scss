@@ -1,0 +1,55 @@
+@import "../../../../theme/app-mixins.scss";
+
+.case-list-contents {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    padding-right: 15px;
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .list-item-container {
+        width: 100%;
+        margin: 15px 0;
+        font-size: 14px;
+        word-break: break-all;
+        border-bottom: 1px solid #f0f1f1;
+        .highlights {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            .active-case {
+                @include insert-icons("test-case-icon-active.svg", 18px, 18px);
+            }
+        }
+    }
+
+    .list-item {
+        color: #6d727c;
+        margin-bottom: 5px;
+        padding-left: 1rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        transition: all 0.2s ease;
+
+        &.active {
+            background-color: #f0f8ff;
+            /*           border-right: 2px solid #066ee0;
+            height: 3rem; */
+            content: ">";
+        }
+
+        &:hover {
+            padding-left: 1.5rem;
+        }
+    }
+
+    .nav-link {
+        color: #066ee0;
+        padding: 0.5rem;
+    }
+}

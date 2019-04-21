@@ -1,0 +1,212 @@
+{
+    "command": "SELECT",
+    "rowCount": 1,
+    "oid": null,
+    "rows": [
+        {
+            "s_no": 1,
+            "steps": "Open Browser Chrome",
+            "status": "Success",
+            "input_param1": "Browser",
+            "input_param2": "chrome",
+            "input_param3": "1",
+            "input_param4": "WIN10",
+            "input_param5": "72.0",
+            "input_param6": null,
+            "input_param7": null,
+            "input_param8": null,
+            "input_param9": null,
+            "input_param10": null,
+            "output": "true",
+            "screen_shot": null,
+            "step_iteration": "1",
+            "environment_name": " ",
+            "include_step_result": " "
+        }
+    ],
+    "fields": [
+        {
+            "name": "s_no",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 23,
+            "dataTypeSize": 4,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "steps",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "status",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "input_param1",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "input_param2",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "input_param3",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "input_param4",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "input_param5",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "input_param6",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "input_param7",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "input_param8",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "input_param9",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "input_param10",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "output",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "screen_shot",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "step_iteration",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "environment_name",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 1043,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "include_step_result",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        }
+    ],
+    "_parsers": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "rowAsArray": false
+}
