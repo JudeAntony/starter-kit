@@ -29,9 +29,11 @@
             </div>
             <div class="pagination"></div>
         </div>
-        <app-execution-results-table
-            [rows]="rows"
-            [rowsPerPage]="rowsPerPage"
-        ></app-execution-results-table>
+        <div class="executions-list">
+            <app-execution-results-table
+                [rows]="rows"
+                [rowsPerPage]="rowsPerPage"
+            ></app-execution-results-table>
+        </div>
     </div>
 </div>

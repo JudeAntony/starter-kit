@@ -1,6 +1,9 @@
 .table {
     position: relative;
     margin: 0;
+    .executions-list {
+        animation: fadeInUp 1s;
+    }
 }
 
 .table-controls {

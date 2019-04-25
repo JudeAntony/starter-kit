@@ -1,38 +1,41 @@
 @import "../../../../theme/app-mixins.scss";
 
+.steps-list {
+    margin: 2rem 0 2.5rem;
+    width: 400px;
+
+    .steps {
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+
+        .step-status {
+            &.step-success {
+                @include insert-icons("step-success-icon.svg", 30px, 30px);
+            }
+            &.step-failure {
+                @include insert-icons("step-failure-icon.svg", 30px, 30px);
+            }
+        }
+
+        .step-no {
+            margin-right: 20px;
+            margin-left: -19px;
+        }
+    }
+}
 .case-steps {
     display: flex;
     margin-top: 15px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    .steps-list {
-        margin: 5px 0;
-        .steps {
-            display: flex;
-            align-items: center;
-            align-content: flex-start;
-
-            .step-status {
-                &.step-success {
-                    @include insert-icons("step-success-icon.svg", 30px, 30px);
-                }
-                &.step-failure {
-                    @include insert-icons("step-failure-icon.svg", 30px, 30px);
-                }
-            }
-
-            .step-no {
-                margin-right: 20px;
-                margin-left: -19px;
-            }
-        }
-    }
     .steps-description {
         margin: 0 1rem;
-        min-width: 400px;
+        min-width: 500px;
         max-width: 600px;
         padding: 0 0.5rem;
+        animation: fadeInRightBig 0.5s;
         .descriptions {
             display: flex;
             justify-content: space-between;
@@ -51,9 +54,11 @@
     }
     .callout-message {
         height: 200px;
-        width: 500px;
+        width: 435px;
+        animation: fadeInUp 1s;
     }
 }
 .screenshot {
-    margin: 2rem 0;
+    margin: 1rem 0.5rem;
+    animation: fadeIn 0.5s;
 }

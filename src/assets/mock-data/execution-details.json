@@ -1,6 +1,6 @@
 {
     "command": "SELECT",
-    "rowCount": 2,
+    "rowCount": 4,
     "oid": null,
     "rows": [
         {
@@ -16,9 +16,33 @@
             "environment": "Gmail - Test Mailvb1"
         },
         {
-            "run": "EXE201904151906134977",
+            "run": "EXE201904151906134970",
             "test_case": "UI_Compare_Data",
-            "test_case_id": "1370",
+            "test_case_id": "1375",
+            "status": "Success",
+            "duration_in_mins": "0:0:13:69",
+            "percentage_passed": "100%",
+            "iteration": "1",
+            "data_set_name": "compare_data",
+            "data_set_id": 670,
+            "environment": "Gmail - Test Mailvb1"
+        },
+        {
+            "run": "EXE201904151906134987",
+            "test_case": "Core_function",
+            "test_case_id": "1335",
+            "status": "Failure",
+            "duration_in_mins": "0:0:19:96",
+            "percentage_passed": "100%",
+            "iteration": "1",
+            "data_set_name": "test_data_010",
+            "data_set_id": 629,
+            "environment": "Gmail - Test Mailvb1"
+        },
+        {
+            "run": "EXE201904151906135000",
+            "test_case": "UI_UX_JS",
+            "test_case_id": "1371",
             "status": "Success",
             "duration_in_mins": "0:0:13:69",
             "percentage_passed": "100%",

@@ -1,41 +1,41 @@
+<div class="steps-list mx-auto">
+    <ng-select
+        [items]="steps"
+        [searchable]="false"
+        [(ngModel)]="selectedStep"
+        bindLabel="steps"
+        bindValue="s_no"
+        placeholder="Steps"
+    >
+        <ng-template ng-label-tmp let-item="item">
+            <div class="steps">
+                <div
+                    class="step-status"
+                    [ngClass]="{
+                        'step-success': item.status === 'Success',
+                        'step-failure': item.status !== 'Success'
+                    }"
+                ></div>
+                <div class="step-no">{{ item.s_no }}</div>
+                <div class="step-name">{{ item.steps }}</div>
+            </div>
+        </ng-template>
+        <ng-template ng-option-tmp let-item="item">
+            <div class="steps">
+                <div
+                    class="step-status"
+                    [ngClass]="{
+                        'step-success': item.status === 'Success',
+                        'step-failure': item.status !== 'Success'
+                    }"
+                ></div>
+                <div class="step-no">{{ item.s_no }}</div>
+                <div class="step-name">{{ item.steps }}</div>
+            </div>
+        </ng-template>
+    </ng-select>
+</div>
 <div class="case-steps">
-    <div class="steps-list">
-        <ng-select
-            [items]="steps"
-            [searchable]="false"
-            [(ngModel)]="selectedStep"
-            bindLabel="steps"
-            bindValue="s_no"
-            placeholder="Steps"
-        >
-            <ng-template ng-label-tmp let-item="item">
-                <div class="steps">
-                    <div
-                        class="step-status"
-                        [ngClass]="{
-                            'step-success': item.status === 'Success',
-                            'step-failure': item.status !== 'Success'
-                        }"
-                    ></div>
-                    <div class="step-no">{{ item.s_no }}</div>
-                    <div class="step-name">{{ item.steps }}</div>
-                </div>
-            </ng-template>
-            <ng-template ng-option-tmp let-item="item">
-                <div class="steps">
-                    <div
-                        class="step-status"
-                        [ngClass]="{
-                            'step-success': item.status === 'Success',
-                            'step-failure': item.status !== 'Success'
-                        }"
-                    ></div>
-                    <div class="step-no">{{ item.s_no }}</div>
-                    <div class="step-name">{{ item.steps }}</div>
-                </div>
-            </ng-template>
-        </ng-select>
-    </div>
     <div class="steps-description" *ngIf="selectedStep">
         <div class="descriptions">
             <div class="desc-label">Browser/Tab:</div>

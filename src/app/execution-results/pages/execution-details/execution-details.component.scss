@@ -47,9 +47,13 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin: 15px 0;
-                padding-bottom: 6px;
+                padding: 15px;
                 border-bottom: 1px solid #f1f0f0;
+            }
+            .callout-message {
+                margin: 3rem auto;
+                width: 750px;
+                animation: fadeInUp 1s;
             }
         }
     }
