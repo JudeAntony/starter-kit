@@ -18,11 +18,12 @@
         .side-nav-wrapper {
             order: -1;
             flex: 1;
+            border-right: 1px solid #d4d7d9;
+            background-color: #f9fafa;
             .side-nav {
                 width: 200px;
                 transition: width 0.25s;
                 overflow: hidden;
-                border-right: 1px solid #d4d7d9;
             }
             .hide {
                 width: 0;

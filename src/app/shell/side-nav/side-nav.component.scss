@@ -12,6 +12,7 @@
     justify-content: space-around;
     padding: 0 32px;
     border-bottom: 1px solid #e3e3e3;
+    background-color: #fff;
 
     .test-nav-items {
         float: left;
@@ -62,7 +63,6 @@
     overflow-x: hidden;
     overflow-y: scroll;
     flex: 1;
-    background-color: #f9fafa;
     height: 100vh;
     .nav-item-container {
         width: 100%;
