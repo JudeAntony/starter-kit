@@ -1,4 +1,5 @@
 <ngx-datatable
+    #myTable
     class="bootstrap execution-results"
     [rows]="rows"
     [loadingIndicator]="true"
@@ -6,10 +7,26 @@
     [headerHeight]="40"
     [footerHeight]="40"
     [limit]="rowsPerPage"
-    [rowHeight]="50"
+    [rowHeight]="'auto'"
     [reorderable]="false"
 >
-    <ngx-datatable-column prop="run_id" name="Run Id" [minWidth]="200">
+    <!-- Row Detail Template -->
+    <!--     <ngx-datatable-row-detail [rowHeight]="50" #myDetailRow (toggle)="onDetailToggle($event)">
+        <ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template>
+            <div style="padding-left:60px; font-size:14px">
+                <div>{{row.gender}}, {{row.age}}</div>
+            </div>
+        </ng-template>
+    </ngx-datatable-row-detail>
+    <ngx-datatable-column [width]="50" [resizeable]="false" [sortable]="false" [draggable]="false"
+        [canAutoResize]="false" [headerClass]="'desktop-hidden'" [cellClass]="'desktop-hidden'">
+        <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+            <a href="javascript:void(0)" title="Expand/Collapse Row" (click)="toggleExpandRow(row)">
+                <i class="fas" [ngClass]="{'fa-chevron-right': !expanded, 'fa-chevron-down': expanded}"></i>
+            </a>
+        </ng-template>
+    </ngx-datatable-column> -->
+    <ngx-datatable-column prop="run_id" name="Run Id" [minWidth]="175">
         <ng-template ngx-datatable-cell-template let-row="row">
             <a
                 [routerLink]="['/execution-results/details', row.run_id]"
@@ -19,35 +36,40 @@
             </a>
         </ng-template>
     </ngx-datatable-column>
-    <ngx-datatable-column name="Status | Duration" [minWidth]="200">
+    <!--     <ngx-datatable-column  prop="suite_case_name" name="Suite / Case"
+        [headerClass]="'tablet-hidden'" [cellClass]="'tablet-hidden'"></ngx-datatable-column> -->
+    <ngx-datatable-column
+        prop="run_description"
+        [flexGrow]="2"
+        [minWidth]="250"
+        name="Description"
+    ></ngx-datatable-column>
+    <ngx-datatable-column
+        name="Status | Duration"
+        [minWidth]="100"
+        [cellClass]="'tablet-hidden'"
+        [headerClass]="'tablet-hidden'"
+    >
         <ng-template ngx-datatable-cell-template let-row="row">
             <div>
                 {{ row.execution_status }} |
-                <small
+                <small *ngIf="row.execution; else noDuration">
                     >{{ row.duration_mins.minutes }}m :
                     {{ row.duration_mins.seconds }}s :
-                    {{ row.duration_mins.milliseconds }}ms</small
-                >
+                    {{ row.duration_mins.milliseconds }}ms
+                </small>
+                <ng-template #noDuration>
+                    <small>00:00:00</small>
+                </ng-template>
             </div>
         </ng-template>
     </ngx-datatable-column>
-    <ngx-datatable-column
-        prop="suite_case_name"
-        name="Suite / Case"
-        [minWidth]="100"
-    ></ngx-datatable-column>
-    <ngx-datatable-column
-        prop="update_user"
-        name="User"
-        [minWidth]="100"
-    ></ngx-datatable-column>
     <ngx-datatable-column
         [headerClass]="'text-center'"
         [sortable]="false"
         [canAutoResize]="false"
         [draggable]="false"
         [resizeable]="false"
-        [minWidth]="200"
     >
         <ng-template ngx-datatable-header-template>
             <span>Action</span>

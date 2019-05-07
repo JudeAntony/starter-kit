@@ -1,0 +1,84 @@
+{
+    "command": "SELECT",
+    "rowCount": 4,
+    "oid": null,
+    "rows": [
+        {
+            "s_no": 1,
+            "steps": "Open Browser Chrome",
+            "step_iteration": "1",
+            "status": "Success",
+            "include_step_result": " "
+        },
+        {
+            "s_no": 2,
+            "steps": "Open Browser IE",
+            "step_iteration": "1",
+            "status": "Success",
+            "include_step_result": " "
+        },
+        {
+            "s_no": 3,
+            "steps": "Open Browser Firefox",
+            "step_iteration": "1",
+            "status": "Success",
+            "include_step_result": " "
+        },
+        {
+            "s_no": 4,
+            "steps": "Open new tab",
+            "step_iteration": "1",
+            "status": "Failure",
+            "include_step_result": " "
+        }
+    ],
+    "fields": [
+        {
+            "name": "s_no",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 23,
+            "dataTypeSize": 4,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "steps",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "step_iteration",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "status",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        },
+        {
+            "name": "include_step_result",
+            "tableID": 0,
+            "columnID": 0,
+            "dataTypeID": 25,
+            "dataTypeSize": -1,
+            "dataTypeModifier": -1,
+            "format": "text"
+        }
+    ],
+    "_parsers": [null, null, null, null, null],
+    "rowAsArray": false
+}

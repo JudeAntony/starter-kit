@@ -1,0 +1,61 @@
+@import "../../../../theme/app-mixins.scss";
+
+.list-header {
+    border-bottom: 1px solid #f0f1f1;
+    text-align: center;
+    padding: 32px 30px 30px 30px;
+    background: #f9fafa;
+}
+.case-list-contents {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    padding: 0 15px;
+
+    a {
+        color: #333;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &:last-child {
+            .list-item-container {
+                border-bottom: none;
+            }
+        }
+
+        .list-item-container {
+            width: 100%;
+            margin: 15px 0;
+            font-size: 14px;
+            word-break: break-all;
+            border-bottom: 1px solid #f0f1f1;
+
+            &.active {
+                color: #0073dd;
+            }
+
+            .highlights {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 0;
+                .active-case {
+                    @include insert-icons(
+                        "test-case-icon-active.svg",
+                        18px,
+                        18px
+                    );
+                    animation: rotate 0.5s;
+                }
+                .success-test-case {
+                    @include insert-icons("check-mark-icon.svg", 18px, 18px);
+                }
+                .failure-test-case {
+                    @include insert-icons("stop-icon.svg", 18px, 18px);
+                }
+            }
+        }
+    }
+}

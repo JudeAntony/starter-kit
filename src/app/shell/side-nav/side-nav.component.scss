@@ -12,20 +12,21 @@
     justify-content: space-around;
     padding: 0 32px;
     border-bottom: 1px solid #e3e3e3;
+    background-color: #fff;
 
     .test-nav-items {
         float: left;
         .test-icon {
             width: 30px;
             height: 30px;
-            background: url("/assets/img/test-icon.svg") no-repeat center;
+            background: url("/assets/img/flask-icon.svg") no-repeat center;
             background-size: contain;
             display: inline-block;
         }
         .test-icon-selected {
             width: 30px;
             height: 30px;
-            background: url("/assets/img/test-icon-selected.svg") no-repeat
+            background: url("/assets/img/flask-icon-selected.svg") no-repeat
                 center;
             background-size: contain;
             display: inline-block;
@@ -62,7 +63,6 @@
     overflow-x: hidden;
     overflow-y: scroll;
     flex: 1;
-    background-color: #f9fafa;
     height: 100vh;
     .nav-item-container {
         width: 100%;
@@ -81,6 +81,7 @@
         justify-content: start;
         align-items: center;
         transition: all 0.2s ease;
+        animation: fadeInRightBig 2s;
 
         &.active {
             background-color: #f0f8ff;

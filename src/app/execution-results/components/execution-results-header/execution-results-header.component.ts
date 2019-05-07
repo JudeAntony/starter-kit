@@ -6,19 +6,20 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
     styleUrls: ['./execution-results-header.component.scss']
 })
 export class ExecutionResultsHeaderComponent implements OnInit {
-    @Input() public pageHeader: String;
-    @Input() public pageSubHeader: String;
-    @Input() public pageIcon: String;
-    @Input() public pageDescription: String;
-    @Input() public pageButtonText: String;
+    @Input() public pageHeader: string;
+    @Input() public pageSubHeader: string;
+    @Input() public pageIcon: string;
+    @Input() public pageDescription: string;
+    @Input() public pageButtonText: string;
+    @Input() public buttonDetails: any[];
 
-    @Output() public buttonAction = new EventEmitter<any>();
+    @Output() public buttonAction = new EventEmitter<string>();
 
     constructor() {}
 
     ngOnInit() {}
 
-    public onClick() {
-        this.buttonAction.emit();
+    public onClick(buttonText: string) {
+        this.buttonAction.emit(buttonText);
     }
 }

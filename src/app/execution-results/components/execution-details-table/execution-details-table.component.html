@@ -1,0 +1,31 @@
+<div class="list-header">
+    <div class="nav-item-header">
+        Test Cases
+    </div>
+</div>
+<div class="case-list-contents">
+    <a
+        *ngFor="let item of rows"
+        (click)="onSelectCase(item)"
+        [routerLink]="['test-case', item.test_case_id]"
+        routerLinkActive
+        #rla="routerLinkActive"
+    >
+        <div class="list-item-container" [ngClass]="{ active: rla.isActive }">
+            <span class="list-item">
+                {{ item.test_case }}
+            </span>
+            <div class="highlights">
+                <div class="percentage">{{ item.percentage_passed }}</div>
+                <div *ngIf="rla.isActive" class="active-case"></div>
+                <div
+                    class="status"
+                    [ngClass]="{
+                        'success-test-case': item.status === 'Success',
+                        'failure-test-case': item.status === 'Failure'
+                    }"
+                ></div>
+            </div>
+        </div>
+    </a>
+</div>

@@ -22,7 +22,11 @@
 }
 .content-button {
     order: 1;
+    display: flex;
     i {
         color: #066ee0;
+    }
+    .detail-button {
+        margin: 0 10px;
     }
 }
