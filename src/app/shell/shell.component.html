@@ -4,13 +4,11 @@
         class="section main-container"
         data-section-type="Content container"
     >
-        <main class="main-content-wrapper">
-            <div class="main-content" [ngClass]="{ 'full-width': hideSideNav }">
-                <router-outlet></router-outlet>
-            </div>
-        </main>
-        <aside class="side-nav-wrapper">
-            <div class="side-nav" [ngClass]="{ hide: hideSideNav }">
+        <div class="main-content" [ngClass]="{ 'full-width': hideSideNav }">
+            <router-outlet></router-outlet>
+        </div>
+        <aside class="side-nav-wrapper" [ngClass]="{ hide: hideSideNav }">
+            <div class="side-nav">
                 <app-side-nav></app-side-nav>
             </div>
         </aside>

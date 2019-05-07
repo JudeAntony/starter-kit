@@ -3,136 +3,138 @@
 .side-nav-container {
     display: flex;
     flex-direction: column;
-}
-.split-side-navs {
-    order: -1;
-    height: 49px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 32px;
-    border-bottom: 1px solid #e3e3e3;
-    background-color: #fff;
 
-    .test-nav-items {
-        float: left;
-        .test-icon {
-            width: 30px;
-            height: 30px;
-            background: url("/assets/img/flask-icon.svg") no-repeat center;
-            background-size: contain;
-            display: inline-block;
-        }
-        .test-icon-selected {
-            width: 30px;
-            height: 30px;
-            background: url("/assets/img/flask-icon-selected.svg") no-repeat
-                center;
-            background-size: contain;
-            display: inline-block;
-        }
-    }
-
-    .divider {
-        width: 1px;
-        height: 100%;
-        background: #e3e3e3;
-    }
-
-    .settings-nav-items {
-        float: right;
-        .settings-icon {
-            width: 30px;
-            height: 30px;
-            background: url("/assets/img/settings-icon.svg") no-repeat center;
-            background-size: contain;
-            display: inline-block;
-        }
-        .settings-icon-selected {
-            width: 30px;
-            height: 30px;
-            background: url("/assets/img/settings-icon-selected.svg") no-repeat
-                center;
-            background-size: contain;
-            display: inline-block;
-        }
-    }
-}
-
-.side-nav-contents {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    flex: 1;
-    height: 100vh;
-    .nav-item-container {
-        width: 100%;
-        margin: 15px 0;
-        font-size: 14px;
-        &:first-of-type {
-            margin-top: 0;
-        }
-    }
-
-    .nav-item {
-        color: #6d727c;
-        margin-bottom: 5px;
-        padding-left: 1rem;
+    .split-side-navs {
+        order: -1;
+        height: 49px;
         display: flex;
-        justify-content: start;
         align-items: center;
-        transition: all 0.2s ease;
-        animation: fadeInRightBig 2s;
+        justify-content: space-around;
+        padding: 0 32px;
+        border-bottom: 1px solid #e3e3e3;
+        background-color: #fff;
 
-        &.active {
-            background-color: #f0f8ff;
-            /*           border-right: 2px solid #066ee0;
-            height: 3rem; */
-            content: ">";
+        .test-nav-items {
+            float: left;
+            .test-icon {
+                width: 30px;
+                height: 30px;
+                background: url("/assets/img/flask-icon.svg") no-repeat center;
+                background-size: contain;
+                display: inline-block;
+            }
+            .test-icon-selected {
+                width: 30px;
+                height: 30px;
+                background: url("/assets/img/flask-icon-selected.svg") no-repeat
+                    center;
+                background-size: contain;
+                display: inline-block;
+            }
         }
 
-        &:hover {
-            padding-left: 1.5rem;
+        .divider {
+            width: 1px;
+            height: 100%;
+            background: #e3e3e3;
+        }
+
+        .settings-nav-items {
+            float: right;
+            .settings-icon {
+                width: 30px;
+                height: 30px;
+                background: url("/assets/img/settings-icon.svg") no-repeat
+                    center;
+                background-size: contain;
+                display: inline-block;
+            }
+            .settings-icon-selected {
+                width: 30px;
+                height: 30px;
+                background: url("/assets/img/settings-icon-selected.svg")
+                    no-repeat center;
+                background-size: contain;
+                display: inline-block;
+            }
         }
     }
 
-    .nav-link {
-        color: #066ee0;
-        padding: 0.5rem;
-    }
+    .side-nav-contents {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex: 1;
+        height: 100vh;
+        .nav-item-container {
+            width: 100%;
+            margin: 15px 0;
+            font-size: 14px;
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
 
-    .icon {
-        padding-right: 5px;
-    }
+        .nav-item {
+            color: #6d727c;
+            margin-bottom: 5px;
+            padding-left: 1rem;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            transition: all 0.2s ease;
+            animation: fadeInRightBig 2s;
 
-    .results-icon {
-        @include insert-icons("test-results-icon.svg", 15px, 15px);
-    }
+            &.active {
+                background-color: #f0f8ff;
+                /*           border-right: 2px solid #066ee0;
+                height: 3rem; */
+                content: ">";
+            }
 
-    .results-icon-active {
-        @include insert-icons("test-results-icon-active.svg", 15px, 15px);
-    }
+            &:hover {
+                padding-left: 1.5rem;
+            }
+        }
 
-    .test-case-icon {
-        @include insert-icons("test-case-icon.svg", 15px, 15px);
-    }
+        .nav-link {
+            color: #066ee0;
+            padding: 0.5rem;
+        }
 
-    .test-case-icon-active {
-        @include insert-icons("test-case-icon-active.svg", 15px, 15px);
-    }
+        .icon {
+            padding-right: 5px;
+        }
 
-    .test-suite-icon {
-        @include insert-icons("test-suite-icon.svg", 15px, 15px);
-    }
+        .results-icon {
+            @include insert-icons("test-results-icon.svg", 15px, 15px);
+        }
 
-    .test-suite-icon-active {
-        @include insert-icons("test-suite-icon-active.svg", 15px, 15px);
-    }
+        .results-icon-active {
+            @include insert-icons("test-results-icon-active.svg", 15px, 15px);
+        }
 
-    .test-data-icon {
-        @include insert-icons("test-data-icon.svg", 15px, 15px);
-    }
+        .test-case-icon {
+            @include insert-icons("test-case-icon.svg", 15px, 15px);
+        }
 
-    .test-data-icon-active {
-        @include insert-icons("test-data-icon-active.svg", 15px, 15px);
+        .test-case-icon-active {
+            @include insert-icons("test-case-icon-active.svg", 15px, 15px);
+        }
+
+        .test-suite-icon {
+            @include insert-icons("test-suite-icon.svg", 15px, 15px);
+        }
+
+        .test-suite-icon-active {
+            @include insert-icons("test-suite-icon-active.svg", 15px, 15px);
+        }
+
+        .test-data-icon {
+            @include insert-icons("test-data-icon.svg", 15px, 15px);
+        }
+
+        .test-data-icon-active {
+            @include insert-icons("test-data-icon-active.svg", 15px, 15px);
+        }
     }
 }

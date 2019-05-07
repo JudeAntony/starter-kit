@@ -1,4 +1,4 @@
-@import "src/theme/theme-variables";
+@import "../../../theme/theme-variables.scss";
 @import "src/theme/app-mixins.scss";
 
 .navbar {
@@ -7,6 +7,10 @@
     border-bottom: 1px solid #d4d7d9;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
 }
 
 .user {

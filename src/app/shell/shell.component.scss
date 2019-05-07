@@ -1,32 +1,70 @@
 .shell-container {
     .main-container {
-        display: flex;
-        flex: 1 0;
-        min-height: 100vh;
-        .main-content-wrapper {
+        margin-top: 66px;
+        min-height: 100%;
+
+        .main-content {
+            margin-left: 200px;
             background: #fff;
-            width: 100%;
             animation: fadeIn 1s;
 
-            .main-content {
-                width: calc(100vw - 200px);
+            &:before {
+                content: " ";
+                background: rgba(0, 0, 0, 0.4);
+                z-index: 12;
+                position: fixed;
+                left: 200px;
+                right: 0;
+                top: 57px;
+                bottom: 0;
+                display: none;
+                /* 
+                Device = Tablets, Ipads (portrait)
+                Screen = B/w 768px to 1024px
+            */
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    display: block;
+                }
             }
-            .full-width {
-                width: 100%;
+
+            /* 
+                Device = Tablets, Ipads (portrait)
+                Screen = B/w 768px to 1024px
+            */
+            @media (min-width: 768px) and (max-width: 1024px) {
+                margin-left: 0;
+            }
+
+            /* 
+                    Device = Tablets, Ipads (landscape)
+                    Screen = B/w 768px to 1024px
+                */
+            @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+                margin-left: 0;
             }
         }
+
+        .main-content.full-width {
+            &:before {
+                display: none;
+            }
+        }
+
         .side-nav-wrapper {
-            order: -1;
-            flex: 1;
+            position: fixed;
+            top: 58px;
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            z-index: 11;
+            transition: width 0.3s ease-in-out;
             border-right: 1px solid #d4d7d9;
             background-color: #f9fafa;
-            .side-nav {
-                width: 200px;
-                transition: width 0.25s;
-                overflow: hidden;
-            }
-            .hide {
+            &.hide {
                 width: 0;
+                .side-nav {
+                    display: none;
+                }
             }
         }
     }
